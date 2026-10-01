@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="id" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#111713">
+  <title>Raka Ilham | Junior Web Developer × Volleyball Athlete</title>
+  <meta name="description" content="Portfolio pribadi Raka Ilham, siswa TJKT dan Junior Web Developer yang terus berkembang di dunia teknologi dan volleyball.">
+  
+  <meta property="og:title" content="Raka Ilham | Junior Web Developer × Volleyball Athlete">
+  <meta property="og:description" content="Membangun dengan kode. Bertumbuh melalui voli.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="foto/raka.jpeg">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800;900&family=Manrope:wght@400;500;600;700;800&family=Silkscreen:wght@400;700&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="style.css">
+  
+  <script>
+    /* Prevent flash of unstyled theme on page load */
+    try {
+      const savedTheme = localStorage.getItem('theme');
+      const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+      const theme = savedTheme || (prefersDark ? 'dark' : 'light');
+      document.documentElement.dataset.theme = theme;
+    } catch (e) {}
+  </script>
+</head>
+<body>
+  <!-- Skip to main content link for accessibility -->
+  <a href="#main" class="skip-link">Lompat ke konten utama</a>
+
+  <!-- Navigation -->
+  <nav class="navbar" id="navbar">
+    <div class="navbar-container">
+      <a href="#" class="navbar-brand">
+        <span class="brand-icon">⚡</span>
+        <span class="brand-text">RAKA</span>
+      </a>
+      
+      <button class="navbar-menu-btn" id="menuBtn" aria-label="Menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <ul class="navbar-menu" id="navMenu" role="navigation">
+        <li><a href="#beranda" class="nav-link active">Beranda</a></li>
+        <li><a href="#tentang" class="nav-link">Tentang Saya</a></li>
+        <li><a href="#keahlian" class="nav-link">Keahlian</a></li>
+        <li><a href="#voli" class="nav-link">Voli</a></li>
+        <li><a href="#perjalanan" class="nav-link">Perjalanan</a></li>
+        <li><a href="#sertifikasi" class="nav-link">Sertifikasi</a></li>
+        <li><a href="#kontak" class="nav-link">Kontak</a></li>
+      </ul>
+
+      <button class="theme-toggle" id="themeToggle" aria-label="Ganti tema">
+        <span class="theme-icon">🌙</span>
+      </button>
+    </div>
+  </nav>
+
+  <main id="main">
+    <!-- ===== HERO SECTION ===== -->
+    <section id="beranda" class="section hero">
+      <div class="hero-container">
+        <div class="hero-content">
+          <p class="hero-label">SISWA TJKT × JUNIOR WEB DEVELOPER × OUTSIDE HITTER</p>
+          <h1 class="hero-title">
+            <span class="text-gradient-primary">RAKA</span>
+            <span class="text-gradient-secondary">ILHAM</span>
+          </h1>
+          <p class="hero-subtitle">Membangun dengan kode. Bertumbuh melalui voli.</p>
+          <p class="hero-quote">"My Life Is My Volleyball."</p>
+          <p class="hero-description">Saya sedang belajar menjadi Junior Web Developer sambil terus mengejar perkembangan saya di lapangan voli. Setiap hari adalah kesempatan baru untuk belajar, berkembang, dan lebih baik dari kemarin.</p>
+          
+          <div class="hero-cta">
+            <a href="#perjalanan" class="btn btn-primary">Lihat Perjalanan Saya</a>
+            <a href="#kontak" class="btn btn-secondary">Hubungi Saya</a>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <img src="foto/raka.jpeg" alt="Raka Ilham di lapangan voli" class="hero-image">
+          <span class="hero-frame-corners" aria-hidden="true"></span>
+          <div class="hero-photo-caption">
+            <span>Outside hitter<br>Pati, Indonesia</span>
+            <strong>21</strong>
+          </div>
+          <span class="hero-orbit-ball" aria-hidden="true">🏐</span>
+        </div>
+      </div>
+
+      <div class="scroll-indicator">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M12 5v14M19 12l-7 7-7-7"/>
+        </svg>
+      </div>
+    </section>
+
+    <!-- ===== ABOUT SECTION ===== -->
+    <section id="tentang" class="section about">
+      <div class="container">
+        <h2 class="section-title">Tentang Saya</h2>
+        
+        <div class="about-grid">
+          <div class="about-content">
+            <p>Saya adalah Raka Ilham, siswa kelas XII TJKT di SMK Tunas Harapan Pati. Saat ini saya sedang belajar menjadi Junior Web Developer sekaligus terus berkembang sebagai atlet voli.</p>
+            
+            <p>Setiap hari saya mencoba membagi waktu antara sekolah, belajar teknologi, dan latihan voli. Tidak selalu mudah, tetapi dari proses itu saya belajar bahwa perkembangan tidak datang dalam satu malam. Sama seperti di lapangan, saya harus terus mencoba, menerima kesalahan, dan kembali berlatih.</p>
+            
+            <p>Saya ingin belajar hal baru. Pemrograman adalah cara saya untuk menjelajahi teknologi, memecahkan masalah, dan mempersiapkan diri untuk memasuki dunia kerja. Sedangkan voli adalah passion yang membentuk karakter saya setiap hari.</p>
+          </div>
+
+          <div class="about-card">
+            <div class="info-grid">
+              <div class="info-item">
+                <span class="info-label">Nama</span>
+                <span class="info-value">Raka Ilham</span>
+              </div>
+              <div class="info-item">
+                <span class="info-label">Usia</span>
+                <span class="info-value">17 Tahun</span>
+              </div>
+              <div class="info-item">
+                <span class="info-label">Sekolah</span>
+                <span class="info-value">SMK THP Pati</span>
+              </div>
+              <div class="info-item">
+                <span class="info-label">Jurusan</span>
+                <span class="info-value">TJKT</span>
+              </div>
+              <div class="info-item">
+                <span class="info-label">Kelas</span>
+                <span class="info-value">XII TJKT 1</span>
+              </div>
+              <div class="info-item">
+                <span class="info-label">Posisi Voli</span>
+                <span class="info-value">Outside Hitter</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== EVERY DAY SECTION ===== -->
+    <section class="section daily-life">
+      <div class="container">
+        <h2 class="section-title">Setiap Hari</h2>
+        <p class="section-subtitle">Saya Harus Belajar. Saya Harus Berlatih.</p>
+
+        <div class="daily-grid">
+          <div class="daily-card">
+            <div class="daily-icon">📚</div>
+            <h3>Sekolah</h3>
+            <p>Mengikuti pembelajaran TJKT dan memperdalam pemahaman tentang jaringan dan teknologi.</p>
+          </div>
+
+          <div class="daily-card">
+            <div class="daily-icon">💻</div>
+            <h3>Coding</h3>
+            <p>Belajar HTML, CSS, JavaScript, dan teknologi web lainnya untuk menjadi developer yang lebih baik.</p>
+          </div>
+
+          <div class="daily-card">
+            <div class="daily-icon">🏐</div>
+            <h3>Latihan</h3>
+            <p>Berlatih voli, mengasah teknik, dan membangun ketangkasan sebagai Outside Hitter.</p>
+          </div>
+
+          <div class="daily-card">
+            <div class="daily-icon">🧠</div>
+            <h3>Belajar dari Kesalahan</h3>
+            <p>Setiap kesalahan adalah pelajaran. Di code maupun di lapangan, saya terus berkembang.</p>
+          </div>
+        </div>
+
+        <div class="daily-message">
+          <p>Menjadi siswa sekaligus atlet berarti belajar membagi waktu. Tidak setiap hari berjalan sempurna. Ada hari ketika tugas menumpuk, latihan terasa berat, atau hasil yang didapat tidak sesuai harapan. Tapi setiap hari selalu ada sesuatu yang bisa dipelajari.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== SKILLS SECTION ===== -->
+    <section id="keahlian" class="section skills">
+      <div class="container">
+        <h2 class="section-title">Keahlian</h2>
+        <p class="section-subtitle">Tools dan teknologi yang sedang saya kuasai</p>
+
+        <div class="skills-grid">
+          <!-- Frontend -->
+          <div class="skill-card">
+            <h3 class="skill-category">Frontend</h3>
+            <ul class="skill-list">
+              <li><span class="skill-name">HTML</span><span class="skill-level">Familiar</span></li>
+              <li><span class="skill-name">CSS</span><span class="skill-level">Familiar</span></li>
+              <li><span class="skill-name">JavaScript</span><span class="skill-level">Learning</span></li>
+              <li><span class="skill-name">Responsive Design</span><span class="skill-level">Familiar</span></li>
+              <li><span class="skill-name">UI Design</span><span class="skill-level">Learning</span></li>
+            </ul>
+          </div>
+
+          <!-- Backend & Programming -->
+          <div class="skill-card">
+            <h3 class="skill-category">Backend & Programming</h3>
+            <ul class="skill-list">
+              <li><span class="skill-name">PHP</span><span class="skill-level">Familiar</span></li>
+              <li><span class="skill-name">Python</span><span class="skill-level">Familiar</span></li>
+              <li><span class="skill-name">C#</span><span class="skill-level">Learning</span></li>
+              <li><span class="skill-name">Java</span><span class="skill-level">Learning</span></li>
+              <li><span class="skill-name">Laravel</span><span class="skill-level">Learning</span></li>
+            </ul>
+          </div>
+
+          <!-- Database & Tools -->
+          <div class="skill-card">
+            <h3 class="skill-category">Database & Tools</h3>
+            <ul class="skill-list">
+              <li><span class="skill-name">MySQL</span><span class="skill-level">Familiar</span></li>
+              <li><span class="skill-name">PostgreSQL</span><span class="skill-level">Learning</span></li>
+              <li><span class="skill-name">Supabase</span><span class="skill-level">Learning</span></li>
+              <li><span class="skill-name">Git & GitHub</span><span class="skill-level">Familiar</span></li>
+              <li><span class="skill-name">VS Code</span><span class="skill-level">Familiar</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CURRENTLY LEARNING SECTION ===== -->
+    <section class="section learning">
+      <div class="container">
+        <h2 class="section-title">Sedang Dipelajari</h2>
+        <div class="learning-card">
+          <div class="learning-icon">🖥️</div>
+          <h3>Virtual Machine / VirtualBox</h3>
+          <p>Saya sedang menjelajahi virtualisasi dan VirtualBox untuk memahami lebih dalam tentang sistem operasi, server, dan infrastruktur IT. Ini adalah bagian penting dari pembelajaran TJKT saya.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== WHAT I'M BUILDING SECTION ===== -->
+    <section class="section building">
+      <div class="container">
+        <h2 class="section-title">Yang Sedang Saya Bangun</h2>
+        <p class="section-subtitle">Fokus pada pengembangan diri, bukan proyek selesai</p>
+
+        <div class="building-grid">
+          <div class="building-card">
+            <h3>Kemampuan</h3>
+            <p>Terus memperkuat dasar pemrograman dan pengembangan web. Saya belajar dari setiap proyek, baik yang berhasil maupun yang masih dalam proses.</p>
+          </div>
+
+          <div class="building-card">
+            <h3>Pengalaman</h3>
+            <p>Belajar melalui tugas sekolah, praktikum, dan berbagai percobaan. Setiap kesempatan adalah tempat belajar baru.</p>
+          </div>
+
+          <div class="building-card">
+            <h3>Masa Depan</h3>
+            <p>Mempersiapkan diri untuk memasuki dunia kerja setelah lulus. Ingin terus mengembangkan skill dan mencari pengalaman industri.</p>
+          </div>
+
+          <div class="building-card">
+            <h3>Pembelajaran</h3>
+            <p>Terus mencoba teknologi baru dan memperluas kemampuan. Tidak pernah puas, selalu ada yang baru untuk dipelajari.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CERTIFICATION SECTION ===== -->
+    <section id="sertifikasi" class="section certification">
+      <div class="container">
+        <h2 class="section-title">Sertifikasi & Pembelajaran</h2>
+        <div class="cert-card">
+          <div class="cert-icon">🏆</div>
+          <div class="cert-content">
+            <h3>Python Programming</h3>
+            <p class="cert-provider">Samsung Innovation Campus</p>
+            <p class="cert-description">Program pembelajaran Python yang komprehensif, mencakup fundamentals hingga aplikasi praktis.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== VOLLEYBALL SECTION ===== -->
+    <section id="voli" class="section volleyball">
+      <div class="container">
+        <h2 class="section-title">Volleyball</h2>
+        <p class="section-subtitle">Lebih dari Sekadar Olahraga</p>
+
+        <div class="volleyball-intro">
+          <p>"<strong>My Life Is My Volleyball.</strong>"</p>
+          <p>Saya telah bermain voli sejak sekolah dasar, selama kurang lebih 8 tahun. Voli bukan hanya tentang kompetisi dan pemenang. Untuk saya, voli adalah tentang teman-teman yang bisa menerima segala tentang diri saya, dan permainan yang memberikan kesan berbeda dari olahraga lain.</p>
+        </div>
+
+        <div class="volleyball-cards">
+          <div class="vcard">
+            <div class="vcard-icon">👥</div>
+            <h3>Persahabatan</h3>
+            <p>Teman-teman yang mendukung dan menerima saya apa adanya.</p>
+          </div>
+
+          <div class="vcard">
+            <div class="vcard-icon">💪</div>
+            <h3>Disiplin</h3>
+            <p>Latihan konsisten yang membentuk karakter dan ketangkasan.</p>
+          </div>
+
+          <div class="vcard">
+            <div class="vcard-icon">🔥</div>
+            <h3>Kompetisi</h3>
+            <p>Semangat untuk berkompetisi dan menjadi yang terbaik di lapangan.</p>
+          </div>
+
+          <div class="vcard">
+            <div class="vcard-icon">📈</div>
+            <h3>Pertumbuhan</h3>
+            <p>Setiap pertandingan dan latihan adalah kesempatan untuk berkembang.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CURRENTLY TRAINING SECTION ===== -->
+    <section class="section training">
+      <div class="container">
+        <h2 class="section-title">Yang Sedang Saya Latih</h2>
+        <div class="training-focus">
+          <h3 class="training-title">Receive</h3>
+          <p>Akhir-akhir ini receive saya terasa kurang konsisten. Karena itu, saya kembali fokus melatih dasar, membaca arah bola, posisi tubuh, dan konsistensi. Ini adalah fondasi yang penting untuk seorang Outside Hitter yang baik.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== VOLLEYBALL GOALS ===== -->
+    <section class="section goals">
+      <div class="container">
+        <h2 class="section-title">Target Saya</h2>
+        <p class="section-subtitle">Mimpi yang sedang saya kejar</p>
+
+        <div class="goal-journey">
+          <div class="goal-step">
+            <div class="goal-marker">1</div>
+            <h3>Kejurkab</h3>
+            <p>Kejuaraan Kabupaten</p>
+          </div>
+          <div class="goal-arrow">→</div>
+          <div class="goal-step">
+            <div class="goal-marker">2</div>
+            <h3>Kejurprov</h3>
+            <p>Kejuaraan Provinsi</p>
+          </div>
+          <div class="goal-arrow">→</div>
+          <div class="goal-step">
+            <div class="goal-marker">3</div>
+            <h3>Kejurnas</h3>
+            <p>Kejuaraan Nasional</p>
+          </div>
+          <div class="goal-arrow">→</div>
+          <div class="goal-step">
+            <div class="goal-marker">🎯</div>
+            <h3>Timnas</h3>
+            <p>Tim Nasional (jika berkesempatan)</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== VOLLEYBALL INSPIRATIONS ===== -->
+    <section class="section inspirations">
+      <div class="container">
+        <h2 class="section-title">Inspirasi Saya</h2>
+        <p class="section-subtitle">Atlet yang menginspirasi perjalanan saya</p>
+
+        <div class="athlete-grid">
+          <!-- Yuki Ishikawa Card -->
+          <div class="athlete-card yuki">
+            <div class="athlete-image-wrapper">
+              <img 
+                src="foto/Yuki%20Ishikawa.jpg" 
+                alt="Yuki Ishikawa bermain voli" 
+                class="athlete-image"
+                onerror="this.src='athlete-placeholder.svg'"
+              >
+              <div class="athlete-overlay"></div>
+              <div class="volleyball-accent accent-1"></div>
+            </div>
+            <div class="athlete-info">
+              <h3 class="athlete-name">Yuki Ishikawa</h3>
+              <p class="athlete-position">Outside Hitter</p>
+              <p class="athlete-country">🇯🇵 Jepang</p>
+            </div>
+          </div>
+
+          <!-- Ran Takahashi Card -->
+          <div class="athlete-card ran">
+            <div class="athlete-image-wrapper">
+              <img 
+                src="foto/ran%20takahashi.jpg" 
+                alt="Ran Takahashi bermain voli" 
+                class="athlete-image"
+                onerror="this.src='athlete-placeholder.svg'"
+              >
+              <div class="athlete-overlay"></div>
+              <div class="volleyball-accent accent-2"></div>
+            </div>
+            <div class="athlete-info">
+              <h3 class="athlete-name">Ran Takahashi</h3>
+              <p class="athlete-position">Outside Hitter</p>
+              <p class="athlete-country">🇯🇵 Jepang</p>
+            </div>
+          </div>
+
+          <!-- Thomasz Fornal Card -->
+          <div class="athlete-card fornal">
+            <div class="athlete-image-wrapper">
+              <img 
+                src="foto/Tom%20Fornal.jpg" 
+                alt="Thomasz Fornal bermain voli" 
+                class="athlete-image"
+                onerror="this.src='athlete-placeholder.svg'"
+              >
+              <div class="athlete-overlay"></div>
+              <div class="volleyball-accent accent-3"></div>
+            </div>
+            <div class="athlete-info">
+              <h3 class="athlete-name">Thomasz Fornal</h3>
+              <p class="athlete-position">Outside Hitter</p>
+              <p class="athlete-country">🇵🇱 Polandia</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="inspiration-message">
+          <p>Ketiganya menjadi inspirasi saya karena memiliki karakter permainan yang berbeda, tetapi sama-sama menunjukkan bagaimana seorang Outside Hitter harus berkembang dalam teknik, konsistensi, keberanian, dan mental bertanding.</p>
+          <p><strong>Masih jauh untuk menyamai mereka. Tapi setiap latihan adalah langkah kecil untuk mendekati versi terbaik diri saya sendiri.</strong></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== COMPETITION JOURNEY ===== -->
+    <section id="perjalanan" class="section competition">
+      <div class="container">
+        <h2 class="section-title">Perjalanan di Lapangan</h2>
+        <p class="section-subtitle">Pertandingan yang telah saya ikuti</p>
+
+        <div class="tournament-bracket">
+          <div class="bracket-match">
+            <div class="team-name">Vs Kesuma</div>
+            <div class="match-result">✓ Menang 3-1</div>
+          </div>
+
+          <div class="bracket-arrow">↓</div>
+
+          <div class="bracket-match">
+            <div class="team-name">Vs KKVC</div>
+            <div class="match-result">Pertandingan Kompetitif</div>
+          </div>
+
+          <div class="bracket-arrow">↓</div>
+
+          <div class="bracket-match final">
+            <div class="team-name">Final vs BTB</div>
+            <div class="match-result">🥈 Juara 2</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== THE TOURNAMENT I COULDN'T PLAY ===== -->
+    <section class="section missed-tournament">
+      <div class="container">
+        <h2 class="section-title">Pertandingan yang Harus Kulewatkan</h2>
+        
+        <div class="missed-content">
+          <p class="missed-quote">"Tahun ini ada satu pertandingan yang sebenarnya sangat ingin saya ikuti."</p>
+          
+          <p>Kejuaraan Kabupaten menjadi salah satu kesempatan yang saya tunggu, tetapi jadwalnya bertepatan dengan kunjungan industri sekolah. Pada akhirnya saya tidak bisa turun ke lapangan.</p>
+          
+          <p class="missed-emotion"><strong>Jujur, rasanya sedih.</strong> Ketika sudah berlatih dan membayangkan bisa bermain di pertandingan, harus melewatkannya bukan sesuatu yang mudah.</p>
+          
+          <p>Tapi saya belajar bahwa perjalanan seorang atlet tidak selalu berjalan sesuai rencana. Ada pertandingan yang bisa kita mainkan, dan ada pertandingan yang hanya bisa kita tunggu untuk kesempatan berikutnya.</p>
+          
+          <p class="missed-conclusion"><strong>"Saya belum selesai. Lapangan berikutnya masih menunggu."</strong></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== QUOTES SECTION ===== -->
+    <section class="section quotes">
+      <div class="container">
+        <div class="quote-main">
+          <p>"Satu pertandingan yang terlewat bukan akhir dari perjalanan."</p>
+        </div>
+
+        <div class="quote-grid">
+          <div class="quote-card">
+            <p>"Kalau belum waktunya menang, setidaknya jangan berhenti berkembang."</p>
+          </div>
+          <div class="quote-card">
+            <p>"Jatuh di satu rally bukan berarti rally berikutnya selesai."</p>
+          </div>
+        </div>
+
+        <div class="quote-final">
+          <p>"Ada pertandingan yang harus kulewatkan, bukan karena aku berhenti berjuang, tetapi karena hidup membawaku ke jalan yang lain. Aku akan terus berlatih sampai lapangan berikutnya memanggil namaku."</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CONTACT SECTION ===== -->
+    <section id="kontak" class="section contact">
+      <div class="container">
+        <h2 class="section-title">Mari Terhubung</h2>
+        <p class="section-subtitle">Jika ingin berdiskusi tentang teknologi, web development, atau sekadar berbagi cerita tentang voli, saya terbuka untuk terhubung.</p>
+
+        <div class="contact-methods">
+          <a href="mailto:ilham66517@gmail.com" class="contact-card">
+            <div class="contact-icon">✉️</div>
+            <h3>Email</h3>
+            <p>ilham66517@gmail.com</p>
+          </a>
+
+          <a href="https://github.com/ilham66517-pixel" target="_blank" rel="noopener noreferrer" class="contact-card">
+            <div class="contact-icon">💻</div>
+            <h3>GitHub</h3>
+            <p>ilham66517-pixel</p>
+          </a>
+
+          <a href="https://instagram.com/rakka_vb" target="_blank" rel="noopener noreferrer" class="contact-card">
+            <div class="contact-icon">📸</div>
+            <h3>Instagram</h3>
+            <p>@rakka_vb</p>
+          </a>
+
+          <a href="mailto:ilham66517@gmail.com" class="contact-card cta">
+            <div class="contact-icon">📧</div>
+            <h3>Kirim Email</h3>
+            <p>Hubungi saya sekarang</p>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-main">
+        <h3>RAKA ILHAM</h3>
+        <p>Junior Web Developer × Volleyball Athlete</p>
+      </div>
+      <p class="footer-quote">"Membangun dengan kode. Bertumbuh melalui voli."</p>
+      <p class="footer-copyright">© 2026 Raka Ilham. Dibuat dengan semangat belajar dan kecintaan pada voli.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
